@@ -1,0 +1,299 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+
+
+{BEGIN container_view}
+<table class="runner-c runner-c-view" cellpadding="0" align=center>
+
+
+<tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" ><div  class="runner-b-viewheader {$brickclass_viewheader}">Ttl Actions, View record [
+Idttl Actions: {$show_key1}
+,
+Property: {$show_key2}
+]</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
+
+
+
+<tr  class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents runner-wrapper" >
+
+{BEGIN container_fields}
+<table class="runner-c runner-c-fields" cellpadding="0" >
+
+
+	{BEGIN ttlnumb_fieldblock}
+	<tr class="runner-toprow header style1 runner-b-viewfields"><td class="runner-cl"><img src="images/spacer.gif"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Title File Number</b>
+		</td>
+		<td class="runner-cc alt">
+			{$ttlnumb_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"><img src="images/spacer.gif"></td></tr>
+{END ttlnumb_fieldblock}
+	{BEGIN whencreated_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Created on</b>
+		</td>
+		<td class="runner-cc alt">
+			{$whencreated_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END whencreated_fieldblock}
+	{BEGIN matter_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Matter</b>
+		</td>
+		<td class="runner-cc alt">
+			{$matter_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END matter_fieldblock}
+	{BEGIN staffatty_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Staff Attorney</b>
+		</td>
+		<td class="runner-cc alt">
+			{$staffatty_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END staffatty_fieldblock}
+	{BEGIN propaddr1_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Property address 1</b>
+		</td>
+		<td class="runner-cc alt">
+			{$propaddr1_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END propaddr1_fieldblock}
+	{BEGIN propaddr2_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Property address 2</b>
+		</td>
+		<td class="runner-cc alt">
+			{$propaddr2_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END propaddr2_fieldblock}
+	{BEGIN propcity_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>City</b>
+		</td>
+		<td class="runner-cc alt">
+			{$propcity_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END propcity_fieldblock}
+	{BEGIN propstate_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>State</b>
+		</td>
+		<td class="runner-cc alt">
+			{$propstate_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END propstate_fieldblock}
+	{BEGIN proppostal_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>ZIP code</b>
+		</td>
+		<td class="runner-cc alt">
+			{$proppostal_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END proppostal_fieldblock}
+	{BEGIN propplatte_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Platte</b>
+		</td>
+		<td class="runner-cc alt">
+			{$propplatte_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END propplatte_fieldblock}
+	{BEGIN proplot_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Lot</b>
+		</td>
+		<td class="runner-cc alt">
+			{$proplot_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END proplot_fieldblock}
+	{BEGIN file_status_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>File Status</b>
+		</td>
+		<td class="runner-cc alt">
+			{$file_status_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END file_status_fieldblock}
+	{BEGIN file_archlocation_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>Location</b>
+		</td>
+		<td class="runner-cc alt">
+			{$file_archlocation_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END file_archlocation_fieldblock}
+	{BEGIN filecabinet_fieldblock}
+	<tr class="runner-row style1 runner-b-viewfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1">
+			<b>File Cabinet</b>
+		</td>
+		<td class="runner-cc alt">
+			{$filecabinet_value}&nbsp;
+		</td>
+	<td class="runner-cr alt"></td></tr>
+{END filecabinet_fieldblock}
+		<tr class="runner-row style1">
+	<td class="runner-cl"></td>
+	<td colspan="2" class="runner-cc">
+		{$TabGroup Client_and_Tenant1}&nbsp;		
+	</td>
+	<td class="runner-cr"></td>
+</tr>
+		
+
+				
+
+				
+
+
+
+
+
+<tr  class="runner-row style2 runner-b-viewbuttons {$brickclass_viewbuttons}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2>{BEGIN prev_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+</span>
+{END prev_button}
+{BEGIN back_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" onclick="window.location.href='ttl_actions_list.php?a=return'" {$backbutton_attrs}>Back to list</a>
+</span>
+{END back_button}
+{BEGIN next_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+</span>
+{END next_button}
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_fields}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_fields}
+
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_view}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_view}
+
+
+
+{BEGIN container_details}
+<table class="runner-c runner-c-details" cellpadding="0" >
+<tr class="{$cheaderclass_details}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+
+{BEGIN detail_tables}
+<tr  class="runner-row style1 runner-b-viewdetails {$brickclass_viewdetails}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" >		{$displayDetailTable_sellers}
+		{$displayDetailTable_buyers}
+		{$displayDetailTable_ttl_recordings}
+		{$displayDetailTable_ttlaction_notes}
+		{$displayDetailTable_brokers}
+</td><td class="runner-cr"></td></tr>{END detail_tables}
+
+
+<tr class="{$cfooterclass_details}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_details}
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

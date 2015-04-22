@@ -1,0 +1,2 @@
+
+var pType=Runner.pages.constants.PAGE_ADD;Runner.pages.PageSettings.addPageEvent("ttl_actions",pType,"afterInit",function(pageObj,pageid){this.on('beforeSave',function(formObj,fieldControlsArr,pageObj){var val=$("#useyear").val();formObj.baseParams['useyear']=val;});;});

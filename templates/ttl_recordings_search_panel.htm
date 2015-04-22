@@ -1,0 +1,70 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_idttl_recordings}
+			<a href="#" id="addSearchControl_idttl_recordings" class="addSearchControl" {$addSearchControl_idttl_recordings_attrs}>Idttl Recordings</a><br>
+		{END addSearch_idttl_recordings}
+		{BEGIN addSearch_Mortgage}
+			<a href="#" id="addSearchControl_Mortgage" class="addSearchControl" {$addSearchControl_Mortgage_attrs}>Mortgage</a><br>
+		{END addSearch_Mortgage}
+		{BEGIN addSearch_Discharge_recorded__Y_N_}
+			<a href="#" id="addSearchControl_Discharge_recorded__Y_N_" class="addSearchControl" {$addSearchControl_Discharge_recorded__Y_N__attrs}>Discharge recorded (Y/N)</a><br>
+		{END addSearch_Discharge_recorded__Y_N_}
+		{BEGIN addSearch_Recording_Date}
+			<a href="#" id="addSearchControl_Recording_Date" class="addSearchControl" {$addSearchControl_Recording_Date_attrs}>Recording Date</a><br>
+		{END addSearch_Recording_Date}
+		{BEGIN addSearch_Book}
+			<a href="#" id="addSearchControl_Book" class="addSearchControl" {$addSearchControl_Book_attrs}>Book</a><br>
+		{END addSearch_Book}
+		{BEGIN addSearch_Page}
+			<a href="#" id="addSearchControl_Page" class="addSearchControl" {$addSearchControl_Page_attrs}>Page</a><br>
+		{END addSearch_Page}
+		{BEGIN addSearch_Account_Number}
+			<a href="#" id="addSearchControl_Account_Number" class="addSearchControl" {$addSearchControl_Account_Number_attrs}>Account Number</a><br>
+		{END addSearch_Account_Number}
+		{BEGIN addSearch_ttl_actions_idttl_actions}
+			<a href="#" id="addSearchControl_ttl_actions_idttl_actions" class="addSearchControl" {$addSearchControl_ttl_actions_idttl_actions_attrs}>Title File Link</a><br>
+		{END addSearch_ttl_actions_idttl_actions}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</td>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,124 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_ttlnumb}
+			<a href="#" id="addSearchControl_ttlnumb" class="addSearchControl" {$addSearchControl_ttlnumb_attrs}>Title File Number</a><br>
+		{END addSearch_ttlnumb}
+		{BEGIN addSearch_whencreated}
+			<a href="#" id="addSearchControl_whencreated" class="addSearchControl" {$addSearchControl_whencreated_attrs}>Created on</a><br>
+		{END addSearch_whencreated}
+		{BEGIN addSearch_propaddr1}
+			<a href="#" id="addSearchControl_propaddr1" class="addSearchControl" {$addSearchControl_propaddr1_attrs}>Property address 1</a><br>
+		{END addSearch_propaddr1}
+		{BEGIN addSearch_propaddr2}
+			<a href="#" id="addSearchControl_propaddr2" class="addSearchControl" {$addSearchControl_propaddr2_attrs}>Property address 2</a><br>
+		{END addSearch_propaddr2}
+		{BEGIN addSearch_propcity}
+			<a href="#" id="addSearchControl_propcity" class="addSearchControl" {$addSearchControl_propcity_attrs}>City</a><br>
+		{END addSearch_propcity}
+		{BEGIN addSearch_propstate}
+			<a href="#" id="addSearchControl_propstate" class="addSearchControl" {$addSearchControl_propstate_attrs}>State</a><br>
+		{END addSearch_propstate}
+		{BEGIN addSearch_proppostal}
+			<a href="#" id="addSearchControl_proppostal" class="addSearchControl" {$addSearchControl_proppostal_attrs}>ZIP code</a><br>
+		{END addSearch_proppostal}
+		{BEGIN addSearch_propplatte}
+			<a href="#" id="addSearchControl_propplatte" class="addSearchControl" {$addSearchControl_propplatte_attrs}>Platte</a><br>
+		{END addSearch_propplatte}
+		{BEGIN addSearch_proplot}
+			<a href="#" id="addSearchControl_proplot" class="addSearchControl" {$addSearchControl_proplot_attrs}>Lot</a><br>
+		{END addSearch_proplot}
+		{BEGIN addSearch_file_status}
+			<a href="#" id="addSearchControl_file_status" class="addSearchControl" {$addSearchControl_file_status_attrs}>File Status</a><br>
+		{END addSearch_file_status}
+		{BEGIN addSearch_file_archlocation}
+			<a href="#" id="addSearchControl_file_archlocation" class="addSearchControl" {$addSearchControl_file_archlocation_attrs}>Location</a><br>
+		{END addSearch_file_archlocation}
+		{BEGIN addSearch_filecabinet}
+			<a href="#" id="addSearchControl_filecabinet" class="addSearchControl" {$addSearchControl_filecabinet_attrs}>File Cabinet</a><br>
+		{END addSearch_filecabinet}
+		{BEGIN addSearch_titleconame}
+			<a href="#" id="addSearchControl_titleconame" class="addSearchControl" {$addSearchControl_titleconame_attrs}>Title Company</a><br>
+		{END addSearch_titleconame}
+		{BEGIN addSearch_client1}
+			<a href="#" id="addSearchControl_client1" class="addSearchControl" {$addSearchControl_client1_attrs}>Client 1</a><br>
+		{END addSearch_client1}
+		{BEGIN addSearch_titlephone}
+			<a href="#" id="addSearchControl_titlephone" class="addSearchControl" {$addSearchControl_titlephone_attrs}>Phone</a><br>
+		{END addSearch_titlephone}
+		{BEGIN addSearch_client2}
+			<a href="#" id="addSearchControl_client2" class="addSearchControl" {$addSearchControl_client2_attrs}>Client 2</a><br>
+		{END addSearch_client2}
+		{BEGIN addSearch_titlepolicy}
+			<a href="#" id="addSearchControl_titlepolicy" class="addSearchControl" {$addSearchControl_titlepolicy_attrs}>Policy No.</a><br>
+		{END addSearch_titlepolicy}
+		{BEGIN addSearch_titleatty}
+			<a href="#" id="addSearchControl_titleatty" class="addSearchControl" {$addSearchControl_titleatty_attrs}>Title Attorney</a><br>
+		{END addSearch_titleatty}
+		{BEGIN addSearch_titlerefatty}
+			<a href="#" id="addSearchControl_titlerefatty" class="addSearchControl" {$addSearchControl_titlerefatty_attrs}>Referred By</a><br>
+		{END addSearch_titlerefatty}
+		{BEGIN addSearch_titleremit}
+			<a href="#" id="addSearchControl_titleremit" class="addSearchControl" {$addSearchControl_titleremit_attrs}>Remittance</a><br>
+		{END addSearch_titleremit}
+		{BEGIN addSearch_titlerecv}
+			<a href="#" id="addSearchControl_titlerecv" class="addSearchControl" {$addSearchControl_titlerecv_attrs}>Received</a><br>
+		{END addSearch_titlerecv}
+		{BEGIN addSearch_examiner}
+			<a href="#" id="addSearchControl_examiner" class="addSearchControl" {$addSearchControl_examiner_attrs}>Examiner</a><br>
+		{END addSearch_examiner}
+		{BEGIN addSearch_closesched_date}
+			<a href="#" id="addSearchControl_closesched_date" class="addSearchControl" {$addSearchControl_closesched_date_attrs}>Sched Closing Date</a><br>
+		{END addSearch_closesched_date}
+		{BEGIN addSearch_closesched_time}
+			<a href="#" id="addSearchControl_closesched_time" class="addSearchControl" {$addSearchControl_closesched_time_attrs}>Sched Closing Time</a><br>
+		{END addSearch_closesched_time}
+		{BEGIN addSearch_refi_purch}
+			<a href="#" id="addSearchControl_refi_purch" class="addSearchControl" {$addSearchControl_refi_purch_attrs}>(R)efi / (P)urch</a><br>
+		{END addSearch_refi_purch}
+		{BEGIN addSearch_res_comm}
+			<a href="#" id="addSearchControl_res_comm" class="addSearchControl" {$addSearchControl_res_comm_attrs}>(R)es / (C)omm</a><br>
+		{END addSearch_res_comm}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</td>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

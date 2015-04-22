@@ -1,0 +1,76 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_Name}
+			<a href="#" id="addSearchControl_Name" class="addSearchControl" {$addSearchControl_Name_attrs}>Name</a><br>
+		{END addSearch_Name}
+		{BEGIN addSearch_Title}
+			<a href="#" id="addSearchControl_Title" class="addSearchControl" {$addSearchControl_Title_attrs}>Title</a><br>
+		{END addSearch_Title}
+		{BEGIN addSearch_Phone}
+			<a href="#" id="addSearchControl_Phone" class="addSearchControl" {$addSearchControl_Phone_attrs}>Phone</a><br>
+		{END addSearch_Phone}
+		{BEGIN addSearch_Contact_Name}
+			<a href="#" id="addSearchControl_Contact_Name" class="addSearchControl" {$addSearchControl_Contact_Name_attrs}>Contact Name</a><br>
+		{END addSearch_Contact_Name}
+		{BEGIN addSearch_Company}
+			<a href="#" id="addSearchControl_Company" class="addSearchControl" {$addSearchControl_Company_attrs}>Company</a><br>
+		{END addSearch_Company}
+		{BEGIN addSearch_Address_line_1}
+			<a href="#" id="addSearchControl_Address_line_1" class="addSearchControl" {$addSearchControl_Address_line_1_attrs}>Address line 1</a><br>
+		{END addSearch_Address_line_1}
+		{BEGIN addSearch_Address_line_2}
+			<a href="#" id="addSearchControl_Address_line_2" class="addSearchControl" {$addSearchControl_Address_line_2_attrs}>Address line 2</a><br>
+		{END addSearch_Address_line_2}
+		{BEGIN addSearch_City}
+			<a href="#" id="addSearchControl_City" class="addSearchControl" {$addSearchControl_City_attrs}>City</a><br>
+		{END addSearch_City}
+		{BEGIN addSearch_State}
+			<a href="#" id="addSearchControl_State" class="addSearchControl" {$addSearchControl_State_attrs}>State</a><br>
+		{END addSearch_State}
+		{BEGIN addSearch_ZIP_Code}
+			<a href="#" id="addSearchControl_ZIP_Code" class="addSearchControl" {$addSearchControl_ZIP_Code_attrs}>ZIP Code</a><br>
+		{END addSearch_ZIP_Code}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</td>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,537 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_search}
+<table class="runner-c runner-c-search" cellpadding="0" align=center>
+
+
+<tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" ><div  class="runner-b-srchheader {$brickclass_srchheader}">Ttl Actions - Advanced search
+{$CrossElem}</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
+
+
+{BEGIN conditions_block}
+<tr  class="runner-row style1 runner-b-srchconditions {$brickclass_srchconditions}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" >	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" name="srchType" {$all_checkbox}><label for="all_checkbox">All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="srchType" {$any_checkbox}><label for="any_checkbox">Any condition</label>
+	</center></td><td class="runner-cr"></td></tr>{END conditions_block}
+
+
+
+<tr  class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents runner-wrapper" >
+
+{BEGIN container_fields}
+<table class="runner-c runner-c-fields" cellpadding="0" >
+
+
+<tr class="runner-toprow header style2 runner-b-srchfields"><td class="runner-cl"><img src="images/spacer.gif"></td>
+	<td class="runner-cc">&nbsp;</td>
+	<td class="runner-cc">NOT</td>
+	<td class="runner-cc" colspan=3>&nbsp; </td>
+<td class="runner-cr"></td></tr>
+	{BEGIN matter_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Matter</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$matter_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_matter}</td>
+	<td class="runner-cc alt">{$matter_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$matter_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END matter_fieldblock}
+	{BEGIN idproperties_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Idproperties</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$idproperties_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_idproperties}</td>
+	<td class="runner-cc alt">{$idproperties_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$idproperties_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END idproperties_fieldblock}
+	{BEGIN staffatty_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Staff Attorney</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$staffatty_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_staffatty}</td>
+	<td class="runner-cc alt">{$staffatty_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$staffatty_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END staffatty_fieldblock}
+	{BEGIN ttlnumb_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Title File Number</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$ttlnumb_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_ttlnumb}</td>
+	<td class="runner-cc alt">{$ttlnumb_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$ttlnumb_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END ttlnumb_fieldblock}
+	{BEGIN whencreated_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Created on</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$whencreated_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_whencreated}</td>
+	<td class="runner-cc alt">{$whencreated_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$whencreated_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END whencreated_fieldblock}
+	{BEGIN propaddr1_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Property address 1</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$propaddr1_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_propaddr1}</td>
+	<td class="runner-cc alt">{$propaddr1_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$propaddr1_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END propaddr1_fieldblock}
+	{BEGIN propaddr2_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Property address 2</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$propaddr2_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_propaddr2}</td>
+	<td class="runner-cc alt">{$propaddr2_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$propaddr2_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END propaddr2_fieldblock}
+	{BEGIN propcity_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		City</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$propcity_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_propcity}</td>
+	<td class="runner-cc alt">{$propcity_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$propcity_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END propcity_fieldblock}
+	{BEGIN propstate_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		State</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$propstate_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_propstate}</td>
+	<td class="runner-cc alt">{$propstate_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$propstate_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END propstate_fieldblock}
+	{BEGIN proppostal_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		ZIP code</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$proppostal_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_proppostal}</td>
+	<td class="runner-cc alt">{$proppostal_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$proppostal_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END proppostal_fieldblock}
+	{BEGIN propplatte_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Platte</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$propplatte_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_propplatte}</td>
+	<td class="runner-cc alt">{$propplatte_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$propplatte_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END propplatte_fieldblock}
+	{BEGIN proplot_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Lot</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$proplot_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_proplot}</td>
+	<td class="runner-cc alt">{$proplot_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$proplot_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END proplot_fieldblock}
+	{BEGIN file_status_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		File Status</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$file_status_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_file_status}</td>
+	<td class="runner-cc alt">{$file_status_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$file_status_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END file_status_fieldblock}
+	{BEGIN file_archlocation_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Location</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$file_archlocation_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_file_archlocation}</td>
+	<td class="runner-cc alt">{$file_archlocation_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$file_archlocation_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END file_archlocation_fieldblock}
+	{BEGIN filecabinet_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		File Cabinet</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$filecabinet_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_filecabinet}</td>
+	<td class="runner-cc alt">{$filecabinet_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$filecabinet_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END filecabinet_fieldblock}
+	{BEGIN titleconame_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Title Company</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titleconame_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titleconame}</td>
+	<td class="runner-cc alt">{$titleconame_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titleconame_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titleconame_fieldblock}
+	{BEGIN client1_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Client 1</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$client1_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_client1}</td>
+	<td class="runner-cc alt">{$client1_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$client1_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END client1_fieldblock}
+	{BEGIN titlephone_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Phone</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titlephone_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titlephone}</td>
+	<td class="runner-cc alt">{$titlephone_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titlephone_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titlephone_fieldblock}
+	{BEGIN titlepolicy_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Policy No.</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titlepolicy_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titlepolicy}</td>
+	<td class="runner-cc alt">{$titlepolicy_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titlepolicy_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titlepolicy_fieldblock}
+	{BEGIN client2_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Client 2</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$client2_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_client2}</td>
+	<td class="runner-cc alt">{$client2_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$client2_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END client2_fieldblock}
+	{BEGIN titleatty_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Title Attorney</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titleatty_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titleatty}</td>
+	<td class="runner-cc alt">{$titleatty_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titleatty_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titleatty_fieldblock}
+	{BEGIN claddr1_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Address</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$claddr1_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_claddr1}</td>
+	<td class="runner-cc alt">{$claddr1_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$claddr1_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END claddr1_fieldblock}
+	{BEGIN titlerefatty_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Referred By</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titlerefatty_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titlerefatty}</td>
+	<td class="runner-cc alt">{$titlerefatty_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titlerefatty_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titlerefatty_fieldblock}
+	{BEGIN claddr2_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Address</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$claddr2_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_claddr2}</td>
+	<td class="runner-cc alt">{$claddr2_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$claddr2_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END claddr2_fieldblock}
+	{BEGIN titleremit_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Remittance</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titleremit_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titleremit}</td>
+	<td class="runner-cc alt">{$titleremit_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titleremit_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titleremit_fieldblock}
+	{BEGIN clphone1_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Phone</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$clphone1_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_clphone1}</td>
+	<td class="runner-cc alt">{$clphone1_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$clphone1_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END clphone1_fieldblock}
+	{BEGIN titlerecv_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Received</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$titlerecv_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_titlerecv}</td>
+	<td class="runner-cc alt">{$titlerecv_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$titlerecv_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END titlerecv_fieldblock}
+	{BEGIN clphone2_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Phone</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$clphone2_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_clphone2}</td>
+	<td class="runner-cc alt">{$clphone2_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$clphone2_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END clphone2_fieldblock}
+	{BEGIN tenant_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Tenant</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$tenant_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_tenant}</td>
+	<td class="runner-cc alt">{$tenant_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$tenant_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END tenant_fieldblock}
+	{BEGIN examiner_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Examiner</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$examiner_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_examiner}</td>
+	<td class="runner-cc alt">{$examiner_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$examiner_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END examiner_fieldblock}
+	{BEGIN closesched_date_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Sched Closing Date</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$closesched_date_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_closesched_date}</td>
+	<td class="runner-cc alt">{$closesched_date_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$closesched_date_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END closesched_date_fieldblock}
+	{BEGIN closesched_time_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		Sched Closing Time</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$closesched_time_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_closesched_time}</td>
+	<td class="runner-cc alt">{$closesched_time_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$closesched_time_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END closesched_time_fieldblock}
+	{BEGIN refi_purch_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		(R)efi / (P)urch</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$refi_purch_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_refi_purch}</td>
+	<td class="runner-cc alt">{$refi_purch_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$refi_purch_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END refi_purch_fieldblock}
+	{BEGIN res_comm_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+		(R)es / (C)omm</td>
+	</td>
+		<td class="runner-cc alt">
+		<input type="checkbox" {$res_comm_notbox}></td>
+	<td class="runner-cc alt">{$searchtype_res_comm}</td>
+	<td class="runner-cc alt">{$res_comm_editcontrol}&nbsp;</td>
+	<td class="runner-cc alt">{$res_comm_editcontrol1}&nbsp;</td>
+	<td class="runner-cr alt"></td></tr>
+{END res_comm_fieldblock}
+
+
+
+
+<tr  class="runner-row style2 runner-b-srchbuttons {$brickclass_srchbuttons}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=5>{BEGIN search_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+</span>
+{END search_button} 
+{BEGIN reset_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$resetbutton_attrs}>Reset</a>
+</span>
+{END reset_button}
+{BEGIN back_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$backbutton_attrs}>Back to list</a>
+</span>
+{END back_button}</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_fields}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_fields}
+
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_search}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_search}
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

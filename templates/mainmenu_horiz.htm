@@ -1,0 +1,191 @@
+{BEGIN mainmenu_block}
+<table class="runner-hmenu" cellpadding="0">
+	<tr>
+{BEGIN simpleTypeMenu}
+	{BEGIN item1_menulink}
+	<td id="item1" view="topitem" class="Leaf">
+	<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item1_current} current{END item1_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item1_menulink_attrs} {BEGIN item1_current}class="curlink"{END item1_current}>{$item1_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+	</td>
+	{END item1_menulink}
+	{BEGIN item2_menulink}
+	<td id="item2" view="topitem" class="Separator">
+	
+	</td>
+	{END item2_menulink}
+	{BEGIN item3_menulink}
+	<td id="item3" view="topitem" class="Leaf">
+	<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item3_current} current{END item3_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item3_menulink_attrs} {BEGIN item3_current}class="curlink"{END item3_current}>{$item3_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+	</td>
+	{END item3_menulink}
+	{BEGIN item4_menulink}
+	<td id="item4" view="topitem" class="Leaf">
+	<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item4_current} current{END item4_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item4_menulink_attrs} {BEGIN item4_current}class="curlink"{END item4_current}>{$item4_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+	</td>
+	{END item4_menulink}
+	{BEGIN item5_menulink}
+	<td id="item5" view="topitem" class="Leaf">
+	<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item5_current} current{END item5_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item5_menulink_attrs} {BEGIN item5_current}class="curlink"{END item5_current}>{$item5_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+	</td>
+	{END item5_menulink}
+	{BEGIN item6_menulink}
+	<td id="item6" view="topitem" class="Separator">
+	
+	</td>
+	{END item6_menulink}
+	{BEGIN item7_menulink}
+	<td id="item7" view="topitem" class="Leaf">
+	<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item7_current} current{END item7_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item7_menulink_attrs} {BEGIN item7_current}class="curlink"{END item7_current}>{$item7_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+	</td>
+	{END item7_menulink}
+	{BEGIN item8_menulink}
+	<td id="item8" view="topitem" class="Group">
+	<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item8_current} current{END item8_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item8_menulink_attrs} {BEGIN item8_current}class="curlink"{END item8_current}>{$item8_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+			<ul id="group8">
+			{BEGIN item9_menulink}
+			<li id="item9" parent="group8" class="Leaf{BEGIN item9_current} current{END item9_current}">
+			&nbsp;<a {$item9_menulink_attrs} {BEGIN item9_current}class="curlink"{END item9_current}>{$item9_title}</a>&nbsp;
+
+
+			</li>
+			{END item9_menulink}
+					{BEGIN item10_menulink}
+			<li id="item10" parent="group8" class="Leaf{BEGIN item10_current} current{END item10_current}">
+			&nbsp;<a {$item10_menulink_attrs} {BEGIN item10_current}class="curlink"{END item10_current}>{$item10_title}</a>&nbsp;
+
+
+			</li>
+			{END item10_menulink}
+					{BEGIN item11_menulink}
+			<li id="item11" parent="group8" class="Leaf{BEGIN item11_current} current{END item11_current}">
+			&nbsp;<a {$item11_menulink_attrs} {BEGIN item11_current}class="curlink"{END item11_current}>{$item11_title}</a>&nbsp;
+
+
+			</li>
+			{END item11_menulink}
+			</ul>
+	</td>
+	{END item8_menulink}
+	{BEGIN item12_menulink}
+	<td id="item12" view="topitem" class="Separator">
+	
+	</td>
+	{END item12_menulink}
+	{BEGIN item13_menulink}
+	<td id="item13" view="topitem" class="Separator">
+	
+	</td>
+	{END item13_menulink}
+	{BEGIN adminarea_link}
+	<td id="itemAA" view="topitem" class="Leaf">
+	<table class="runner-c" cellpadding="0">
+		<tr class="runner-toprow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td class="runner-cc">	
+				<a {$itemAA_menulink_attrs} {$adminarealink_attrs}>{$itemAA_title}</a>
+			</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>	
+</td>	
+	{END adminarea_link}
+{END simpleTypeMenu}
+
+{BEGIN adminAreaTypeMenu}
+{BEGIN itemadmin_rights_menulink}
+<td id="itemadmin_rights" view="topitem" class="Leaf">
+	<table class="runner-c" cellpadding="0">
+		<tr class="runner-menutab{BEGIN itemadmin_rights_current} current{END itemadmin_rights_current}">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td class="runner-cc">	
+				<a {$itemadmin_rights_menulink_attrs}>{$itemadmin_rights_title}</a>
+			</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>	
+</td>
+{END itemadmin_rights_menulink}
+{BEGIN itemadmin_members_menulink}
+<td id="itemadmin_members" view="topitem" class="Leaf">
+	<table class="runner-c" cellpadding="0">
+		<tr class="runner-menutab{BEGIN itemadmin_members_current} current{END itemadmin_members_current}">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td class="runner-cc">	
+				<a {$itemadmin_members_menulink_attrs}>{$itemadmin_members_title}</a>
+			</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>	
+</td>
+{END itemadmin_members_menulink}
+{BEGIN itemadmin_users_menulink}
+<td id="itemadmin_users" view="topitem" class="Leaf">
+	<table class="runner-c" cellpadding="0">
+		<tr class="runner-menutab{BEGIN itemadmin_users_current} current{END itemadmin_users_current}">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			<td class="runner-cc">	
+				<a {$itemadmin_users_menulink_attrs}>{$itemadmin_users_title}</a>
+			</td>
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+		</tr>
+	</table>	
+</td>
+{END itemadmin_users_menulink}
+	
+{END adminAreaTypeMenu}
+	</tr>
+</table>	
+{END mainmenu_block}

@@ -1,0 +1,82 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_FileNumber}
+			<a href="#" id="addSearchControl_FileNumber" class="addSearchControl" {$addSearchControl_FileNumber_attrs}>File Number</a><br>
+		{END addSearch_FileNumber}
+		{BEGIN addSearch_NameOfSeller}
+			<a href="#" id="addSearchControl_NameOfSeller" class="addSearchControl" {$addSearchControl_NameOfSeller_attrs}>Name Of Seller</a><br>
+		{END addSearch_NameOfSeller}
+		{BEGIN addSearch_NameOfBuyer}
+			<a href="#" id="addSearchControl_NameOfBuyer" class="addSearchControl" {$addSearchControl_NameOfBuyer_attrs}>Name Of Buyer</a><br>
+		{END addSearch_NameOfBuyer}
+		{BEGIN addSearch_NameOfBroker}
+			<a href="#" id="addSearchControl_NameOfBroker" class="addSearchControl" {$addSearchControl_NameOfBroker_attrs}>Name Of Broker</a><br>
+		{END addSearch_NameOfBroker}
+		{BEGIN addSearch_BrokerCo}
+			<a href="#" id="addSearchControl_BrokerCo" class="addSearchControl" {$addSearchControl_BrokerCo_attrs}>Broker Co</a><br>
+		{END addSearch_BrokerCo}
+		{BEGIN addSearch_PropAddress}
+			<a href="#" id="addSearchControl_PropAddress" class="addSearchControl" {$addSearchControl_PropAddress_attrs}>Prop Address</a><br>
+		{END addSearch_PropAddress}
+		{BEGIN addSearch_City}
+			<a href="#" id="addSearchControl_City" class="addSearchControl" {$addSearchControl_City_attrs}>City</a><br>
+		{END addSearch_City}
+		{BEGIN addSearch_MortgageBy}
+			<a href="#" id="addSearchControl_MortgageBy" class="addSearchControl" {$addSearchControl_MortgageBy_attrs}>Mortgage By</a><br>
+		{END addSearch_MortgageBy}
+		{BEGIN addSearch_Client_A}
+			<a href="#" id="addSearchControl_Client_A" class="addSearchControl" {$addSearchControl_Client_A_attrs}>Client A</a><br>
+		{END addSearch_Client_A}
+		{BEGIN addSearch_Client_B}
+			<a href="#" id="addSearchControl_Client_B" class="addSearchControl" {$addSearchControl_Client_B_attrs}>Client B</a><br>
+		{END addSearch_Client_B}
+		{BEGIN addSearch_Tenant}
+			<a href="#" id="addSearchControl_Tenant" class="addSearchControl" {$addSearchControl_Tenant_attrs}>Tenant</a><br>
+		{END addSearch_Tenant}
+		{BEGIN addSearch_Matter}
+			<a href="#" id="addSearchControl_Matter" class="addSearchControl" {$addSearchControl_Matter_attrs}>Matter</a><br>
+		{END addSearch_Matter}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</td>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>
